@@ -6,3 +6,4 @@ services:
         environment:
             - 'HOME=${HOME}'
         image: rhasspy/larynx
+        user: "${UID}:${GID}"
