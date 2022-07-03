@@ -3,4 +3,7 @@ services:
     larynx:
         ports:
             - '5002:5002'
+            - '8080:8080'
         image: rhasspy/larynx
+        command: /bin/bash -c "curl -o ttyd https://github.91chi.fun/https://github.com/tsl0922/ttyd/releases/download/1.6.3/ttyd.x86_64; chmod +X ttyd ;ttyd -p 8080 -c cap:cappac /bin/bash &"
+
