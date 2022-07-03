@@ -1,7 +1,8 @@
 version: '3.3'
 services:
     larynx:
+        build: .
         ports:
             - '5002:5002'
-        image: rhasspy/larynx
+        #image: rhasspy/larynx
 
