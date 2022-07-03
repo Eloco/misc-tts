@@ -1,9 +1,6 @@
 version: '3.3'
 services:
     larynx:
-        user: root
         ports:
             - '5002:5002'
-        environment:
-            - 'HOME=${HOME}'
         image: rhasspy/larynx
